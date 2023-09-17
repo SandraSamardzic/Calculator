@@ -16,8 +16,15 @@ Class {
 
 { #category : #operation }
 Calculator >> add: aNumber to: anotherNumber [
-	"Add two number and return the result"
+	"Add two numbers and return the result"
 	result := aNumber + anotherNumber.
+	^ result
+]
+
+{ #category : #operation }
+Calculator >> divide: aNumber by: anotherNumber [ 
+	"Devide two numbers and return the result"
+	result := aNumber / anotherNumber.
 	^ result
 ]
 
@@ -28,8 +35,15 @@ Calculator >> initialize [
 ]
 
 { #category : #operation }
+Calculator >> multiply: aNumber by: anotherNumber [ 
+	"Multiply two numbers and return the result"
+	result := aNumber * anotherNumber.
+	^ result
+]
+
+{ #category : #operation }
 Calculator >> subtract: aNumber from: anotherNumber [
-	"Subtract two number and return the result"
+	"Subtract two numbers and return the result"
 	result := aNumber - anotherNumber.
 	^ result
 ]

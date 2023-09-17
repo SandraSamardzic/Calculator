@@ -14,6 +14,24 @@ CalculatorTest >> testAddition [
 ]
 
 { #category : #tests }
+CalculatorTest >> testDivision [ 
+
+    | calculator result |
+    calculator := Calculator  new.
+    result := calculator divide: 36 by: 4.
+    self assert: result equals: 9.
+]
+
+{ #category : #tests }
+CalculatorTest >> testMultiplication [
+
+    | calculator result |
+    calculator := Calculator  new.
+    result := calculator multiply:  5 by: 5.
+    self assert: result equals: 25.
+]
+
+{ #category : #tests }
 CalculatorTest >> testSubtraction [
 
     | calculator result |
