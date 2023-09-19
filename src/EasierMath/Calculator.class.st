@@ -8,7 +8,7 @@ I work with tests that help me define operations.
 Class {
 	#name : #Calculator,
 	#superclass : #Object,
-	#classVars : [
+	#instVars : [
 		'result'
 	],
 	#category : #EasierMath
