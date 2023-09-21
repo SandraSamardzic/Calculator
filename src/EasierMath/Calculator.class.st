@@ -52,6 +52,13 @@ Calculator >> multiply: aNumber by: anotherNumber [
 ]
 
 { #category : #operation }
+Calculator >> squareRoot: aNumber [
+	"Get the square root of aNumber"
+	result := aNumber sqrt.
+	^ result
+]
+
+{ #category : #operation }
 Calculator >> subtract: aNumber from: anotherNumber [
 	"Subtract two numbers and return the result"
 	result := aNumber - anotherNumber.

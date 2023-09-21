@@ -41,6 +41,15 @@ CalculatorTest >> testMultiplication [
 ]
 
 { #category : #tests }
+CalculatorTest >> testSquareRoot [
+
+    | calculator result |
+    calculator := Calculator  new.
+    result := calculator squareRoot:576.
+    self assert: result equals: 24.
+]
+
+{ #category : #tests }
 CalculatorTest >> testSubtraction [
 
     | calculator result |
