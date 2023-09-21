@@ -23,6 +23,15 @@ CalculatorTest >> testDivision [
 ]
 
 { #category : #tests }
+CalculatorTest >> testExponent [
+
+    | calculator result |
+    calculator := Calculator  new.
+    result := calculator exponent: 5 raisedTo: 3.
+    self assert: result equals: 125.
+]
+
+{ #category : #tests }
 CalculatorTest >> testMultiplication [
 
     | calculator result |

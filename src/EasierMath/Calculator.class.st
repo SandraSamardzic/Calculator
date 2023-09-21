@@ -28,6 +28,16 @@ Calculator >> divide: aNumber by: anotherNumber [
 	^ result
 ]
 
+{ #category : #operation }
+Calculator >> exponent: aNumber raisedTo: anotherNumber [
+	"Multiply aNumber by itself anotherNumber of times"
+	result := 1.
+	anotherNumber timesRepeat: [ 
+		result := result * aNumber.
+	 ].
+	^ result
+]
+
 { #category : #initialization }
 Calculator >> initialize [
 	
